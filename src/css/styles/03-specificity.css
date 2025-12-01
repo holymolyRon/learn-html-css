@@ -3,10 +3,29 @@ body {
   color: green;
 }
 
-p {
+.wrapper {
+  color: blue;
+}
+
+/* 우선순위 p.note */
+#coding {
+  color: blue;
+}
+.a.b.c.d.e.f.g.h.i.j.k.l {
+  color: green;
+}
+
+body .wrapper p.note {
   color: red;
 }
 
-.wrapper {
-  color: blue;
+body p.note.like {
+  color: red;
+}
+p.note {
+  color: purple;
+}
+
+.wrapper p {
+  color: skyblue !important;
 }
