@@ -1,4 +1,5 @@
 /* 유틸리티 바 */
+/* aria-hidden으로 구분선 제공 방식 */
 .utility-bar {
   --spacing: 8px;
 
@@ -20,8 +21,7 @@
   }
 }
 
-/*  */
-/* 유틸리티 바 */
+/* ::before 선택자로 구분선 제공 방식 */
 .utility-bar-before {
   --spacing: 8px;
 
