@@ -1,8 +1,19 @@
 /* CSS 예제 본문 스타일 */
 
+/* 기본 글꼴 */
+body {
+  font-family: 'SUIT Variable', sans-serif;
+}
+
+/* 링크 a 스타일 */
 a {
   text-decoration: none;
   color: inherit;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 /* 여백 */
@@ -20,11 +31,6 @@ a {
   border: 1px solid currentColor;
   margin-block: 10px;
   padding: 10px;
-}
-
-/* 기본 스타일 */
-body {
-  font-family: 'SUIT Variable', sans-serif;
 }
 
 /* copy component */
