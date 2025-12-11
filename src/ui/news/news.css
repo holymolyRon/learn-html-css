@@ -32,12 +32,15 @@
 
 /* 새소식 - grid 레이아웃 Feat. 슬비쌤 코드 */
 .news {
-  box-shadow: 0 0 0 1px red;
   background: var(--blue-300);
   color: var(--white);
-  inline-size: 375px;
   display: grid;
-  grid-template-columns: 1fr 63px;
+
+  /* new의 최소 사이즈 */
+  min-inline-size: 320px;
+  /* minmax -> 최소크기는 200px + 유연하게 */
+  /* max-content -> 가장 긴 컨텐츠의 크기로 너비 정함 */
+  grid-template-columns: minmax(200px, 1fr) max-content;
   gap: 8px;
   padding: 16px;
 
@@ -58,6 +61,14 @@
     font-size: 0.8125rem;
     line-height: 1.5;
     letter-spacing: -0.02em;
+
+    a {
+      /* a태그는 원래 인라인, 지금은 grid의 블록  */
+      /* 오버플로우 처리 -> 3개 세트!! */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
   .more {
