@@ -2,7 +2,8 @@
 .like,
 .lion,
 .euid,
-.frontend {
+.frontend,
+.bootcamp {
   box-shadow: 0 0 0 1px #000;
   > div:nth-child(1) {
     background: var(--pink);
@@ -132,4 +133,14 @@
     /* align-self: end; */
     place-self: end;
   }
+}
+
+/* minmax() 함수, repeat() 함수 */
+.bootcamp {
+  display: grid;
+  /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+  grid-auto-rows: 50px;
+  /* auto-fill 유연하게 컬럼의 개수를 다르게 가능 */
+  /* auto-fit */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
