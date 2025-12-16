@@ -1,44 +1,46 @@
-/* CSS 예제 본문 스타일 */
+@layer base {
+  /* CSS 예제 본문 스타일 */
 
-/* 기본 글꼴 */
-body {
-  font-family: 'SUIT Variable', sans-serif;
-}
-
-/* 링크 a 스타일 */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-/* 여백 */
-.spacing-20 {
-  margin: 20px;
-
-  h1 {
-    margin-block: 20px;
+  /* 기본 글꼴 */
+  body {
+    font-family: 'SUIT Variable', sans-serif;
   }
-}
 
-/* 컴포넌트 영역 스타일링 */
-/* ui component */
-.ui-component {
-  border: 1px solid currentColor;
-  margin-block: 10px;
-  padding: 10px;
-}
+  /* 링크 a 스타일 */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
-/* copy component */
-.copy-component {
-  display: flex;
-  background: black;
-  color: white;
-  margin-block-start: 0.5em;
-  padding: 0.5em 1em;
-  border-radius: 4px;
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+
+  /* 여백 */
+  .spacing-20 {
+    margin: 20px;
+
+    h1 {
+      margin-block: 20px;
+    }
+  }
+
+  /* 컴포넌트 영역 스타일링 */
+  /* ui component */
+  .ui-component {
+    border: 1px solid currentColor;
+    margin-block: 10px;
+    padding: 10px;
+  }
+
+  /* copy component */
+  .copy-component {
+    display: flex;
+    background: black;
+    color: white;
+    margin-block-start: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+  }
 }
