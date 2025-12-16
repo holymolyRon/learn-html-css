@@ -46,3 +46,22 @@
     }
   }
 }
+/* 레이아웃 */
+.navigation {
+  padding-bottom: 45px;
+  width: max-content;
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    column-gap: 16px;
+
+    .menu-accessibility,
+    .menu-qna,
+    .menu-archive {
+      inset: unset;
+      inset-inline-end: anchor(right);
+      inset-block-start: calc(anchor(bottom) + 4px);
+    }
+  }
+}
